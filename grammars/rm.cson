@@ -1,16 +1,15 @@
 # List of scopes: https://github.com/psmitt/metalanguage/blob/master/examples/ScopeList.ScopeList
-# Generic placeholder file
 
-'scopeName': 'source.-bugtemplate'
-'name': 'Bugtest'
+'scopeName': 'source.red-template'
+'name': 'Red Template'
 'fileTypes': [
-  'bug'
+  'red'
 ]
 'patterns': [
   {
     'begin': '"'
     'end': '"'
-    'name': 'punctuation.definition.string.begin.Bugtest'
+    'name': 'punctuation.definition.string.begin.python'
   },
   {
     'match': 'SUBJECT:|DESC:|ASSIGNEE:|SEVERITY:|BUILD:|PLATFORMS:'
@@ -24,17 +23,10 @@
     'match': 'Summary:|Steps to reproduce:|English result:|Observed result:|Expected result:'
     'name': 'keyword.control.class.Bugtest'
   },
-  # Number list
   {
     'begin': '[0-9]'
-    'end': '\.'
+    'end': '.'
     'name': 'variable.other.object.Bugtest'
-  },
-  # Country codes retrieved from ISO 639-1 and 639-2
-  # https://www.loc.gov/standards/iso639-2/php/code_list.php
-  {
-    'match': 'ENG|KOR|GER|FRA|FRE|ES|SPA|ZH|CHI|ZHO|JA|JPN|IT|ITA|PL|POL|RU|RUS|POR|PT|PTW|'
-    'name': 'keyword.control.class.Bugtest'
   }
 ]
 
