@@ -1,0 +1,37 @@
+# List of scopes: https://github.com/psmitt/metalanguage/blob/master/examples/ScopeList.ScopeList
+
+'scopeName': 'source.-bugtest'
+'name': 'Bugtest'
+'fileTypes': [
+  'bug'
+]
+'patterns': [
+  {
+    'begin': '"'
+    'end': '"'
+    'name': 'punctuation.definition.string.begin.python'
+  },
+  {
+    'match': 'SUBJECT:|DESC:|ASSIGNEE:|SEVERITY:|BUILD:|PLATFORMS:'
+    'name': 'storage.type.function.Bugtest'
+  },
+  {
+    'match': '='
+    'name': 'constant.character.escape.Bugtest'
+  },
+  {
+    'match': 'Summary:|Steps to reproduce:|English result:|Observed result:|Expected result:'
+    'name': 'keyword.control.class.Bugtest'
+  },
+  {
+    'begin': '[0-9]'
+    'end': '.'
+    'name': 'variable.other.object.Bugtest'
+  }
+]
+
+# 'punctuation.definition.variable.Bugtest'
+# 'keyword.control.class.Bugtest'
+# 'variable.other.object.Bugtest'
+# 'storage.type.function.Bugtest'
+# 'constant.character.escape.Bugtest'

@@ -1,0 +1,14 @@
+{
+  "name": "language--bugtest",
+  "version": "0.0.0",
+  "description": "A handy package for bug handling",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/atom/language--bugtest",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
