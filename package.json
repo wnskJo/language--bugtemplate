@@ -4,9 +4,11 @@
   "description": "A handy package for bug handling",
   "keywords": [
     "language",
-    "grammar"
+    "grammar",
+    "bug",
+    "template"
   ],
-  "repository": "https://github.com/atom/language--bugtest",
+  "repository": "https://github.com/wnskJo/language--bugtemplate",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
