@@ -1,7 +1,7 @@
 {
-  "name": "language--bugtest",
+  "name": "language-bug-report-template",
   "version": "0.0.0",
-  "description": "A handy package for bug handling",
+  "description": "A handy package for bug reporting",
   "keywords": [
     "language",
     "grammar",
