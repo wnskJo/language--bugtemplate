@@ -1,0 +1,70 @@
+# List of scopes: https://github.com/psmitt/metalanguage/blob/master/examples/ScopeList.ScopeList
+
+'scopeName': 'source.jir-template'
+'name': 'Jir'
+'fileTypes': [
+  'jir'
+]
+'patterns': [
+  # Main fields
+  {
+    'match': '(SUMMARY:|DESCRIPTION:|EXPECTED RESULTS:|STEPS TO REPRODUCE:|BUG SEVERITY:|AFFECTS VERSION:)'
+    'name': 'invalid.illegal.Jir'
+  },
+  {
+    'match': '([\\[\\]])'
+    'name': 'string.Jir'
+  },
+  # Country codes retrieved from ISO 639-1 and 639-2
+  # https://www.loc.gov/standards/iso639-2/php/code_list.php
+  {
+    'match': '(ENG|KOR|GER|FRE|ESP|LAT|SZH|TZH|JAP|ITA|POL|POR|RUS)'
+    'name': 'support.class.Jir'
+  },
+  # Tags (platforms and others)
+  {
+    'match': '(NX|PS4|XB1|PC|PTW|LOC)'
+    'name': 'constant.character.escape.Jir'
+  },
+  # Description brackets
+  {
+    'match': '(References|EN Text|Notes:|Actual Results)'
+    'name': 'entity.name.function.Jir'
+  },
+  {
+    'match': '='
+    'name': 'comment.Jir'
+  },
+  {
+    'match': '[0-9]\\.'
+    'name': 'variable.parameter.function.Jir'
+  },
+  {
+    'match': '[0-9]\\.'
+    'name': 'variable.parameter.function.Jir'
+  }
+]
+# RESOURCES:
+#   Colors
+#     comment
+#       grey
+#     storage
+#       red
+#     storage.type
+#       light blue
+#     invalid.deprecated
+#       purple highlight
+#     invalid.illegal
+#       red highlight
+#     string
+#       yellow
+#     constant.character.escape
+#       purple
+#     entity.other.inherited-class
+#       green (italics)
+#     variable.parameter.function
+#       orange (italics)
+#     entity.name.function
+#       green
+#     support.class
+#       light blue (italics)
