@@ -28,16 +28,12 @@
   },
   # Description brackets
   {
-    'match': '(References|EN Text|Notes:|Actual Results)'
+    'match': '(References|EN Text|Notes|Actual Results)'
     'name': 'entity.name.function.Jir'
   },
   {
     'match': '='
     'name': 'comment.Jir'
-  },
-  {
-    'match': '[0-9]\\.'
-    'name': 'variable.parameter.function.Jir'
   },
   {
     'match': '[0-9]\\.'
