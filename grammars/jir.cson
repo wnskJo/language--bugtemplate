@@ -36,7 +36,7 @@
     'name': 'comment.Jir'
   },
   {
-    'match': '[0-9]\\.'
+    'match': '[0-9]\\. '
     'name': 'variable.parameter.function.Jir'
   }
 ]
